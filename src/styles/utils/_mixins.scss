@@ -1,0 +1,114 @@
+@mixin borderRadius($value) {
+   -webkit-border-radius: $value;
+   -moz-border-radius: $value;
+   border-radius: $value;
+}
+
+@mixin boxShadow($value...) {
+   -webkit-box-shadow: $value;
+   -moz-box-shadow: $value;
+   box-shadow: $value;
+}
+
+@mixin filter($value) {
+   -webkit-filter: $value;
+   -moz-filter: $value;
+   -o-filter: $value;
+   -ms-filter: $value;
+   filter: $value;
+}
+
+@mixin flexAlignItems($align) {
+   -webkit-align-items: $align;
+   -moz-align-items: $align;
+   -ms-align-items: $align;
+   align-items: $align;
+}
+
+@mixin flexAlignSelf($align) {
+   align-self: $align;
+}
+
+@mixin flexDirection($direction) {
+   -webkit-flex-direction: $direction;
+   -moz-flex-direction: $direction;
+   -ms-flex-direction: $direction;
+   flex-direction: $direction;
+}
+
+@mixin flexFlow($flow, $wrap: nowrap) {
+   -webkit-flex-flow: $flow $wrap;
+   -moz-flex-flow: $flow $wrap;
+   -ms-flex-flow: $flow $wrap;
+   flex-flow: $flow $wrap;
+}
+
+@mixin flexJustifyContent($justify) {
+   -webkit-justify-content: $justify;
+   -moz-justify-content: $justify;
+   -ms-flex-pack: $justify;
+   -ms-justify-content: $justify;
+   justify-content: $justify;
+}
+
+@mixin flexWrap($wrap) {
+   -webkit-flex-wrap: $wrap;
+   -moz-flex-wrap: $wrap;
+   -ms-flex-wrap: $wrap;
+   flex-wrap: $wrap;
+}
+
+@mixin gridAlignSelf($value) {
+   -ms-grid-row-align: $value;
+   align-self: $value;
+}
+
+@mixin gridColumn($col-start, $col-end) {
+   -ms-grid-column: $col-start;
+   -ms-grid-column-span: $col-end - $col-start;
+   grid-column: #{$col-start} / #{$col-end};
+}
+
+@mixin gridJustifySelf($value) {
+   -ms-grid-column-align: $value;
+   justify-self: $value;
+}
+
+@mixin gridRow($row-start, $row-end) {
+   -ms-grid-row: $row-start;
+   -ms-grid-row-span: $row-end - $row-start;
+   grid-row: #{$row-start} / #{$row-end};
+}
+
+@mixin gridTemplateRows($rows...) {
+   -ms-grid-rows: $rows;
+   grid-template-rows: $rows;
+}
+
+@mixin gridTemplateColumns($columns...) {
+   -ms-grid-columns: $columns;
+   grid-template-columns: $columns;
+}
+
+@mixin transform($value) {
+   -webkit-transform: $value;
+   -moz-transform: $value;
+   -ms-transform: $value;
+   -o-transform: $value;
+   transform: $value;
+}
+
+@mixin transition($value) {
+   -webkit-transition: $value;
+   -moz-transition: $value;
+   -o-transition: $value;
+   transition: $value;
+}
+
+@mixin opacity($value) {
+   @include filter(alpha(Opacity=($value * 100)));
+   -moz-opacity: $value;
+   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($value * 100));
+   -khtml-opacity: $value;
+   opacity: $value;
+}

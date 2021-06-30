@@ -1,0 +1,30 @@
+// Colors
+
+// First tier
+$color-black-100: #000;
+$color-black-200: rgba(0, 0, 0, 0.04);
+$color-blue-100: #428bca;
+$color-blue-200: #2a6496;
+$color-blue-250: rgba(0, 44, 84, 0.25);
+$color-blue-300: rgba(0, 44, 84, 0.75);
+$color-blue-400: #002c54;
+$color-green-50: #b0b400;
+$color-green-100: #27AE60;
+$color-green-200: #1b981b;
+$color-grey-100: #bdbdbd;
+$color-grey-200: #757575;
+$color-orange-100: #ff6700;
+$color-red-100: #da2037;
+$color-white-100: #fff;
+
+$color-primary: $color-blue-400;
+$color-secondary: $color-red-100;
+
+// Second tier
+$color-container: $color-white-100;
+
+$color-link: $color-blue-100;
+$color-on-link: $color-blue-200;
+$color-valued: $color-green-50;
+
+$breakpoint-view: 1440px;

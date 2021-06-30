@@ -1,0 +1,64 @@
+%bold {
+   font-weight: bold;
+}
+
+%containerBreakpoint {
+   max-width: $breakpoint-view;
+   margin: 0 auto;
+   width: 100%;
+}
+
+%column {
+   @extend %grid;
+   @include borderRadius(5px);
+   @include boxShadow(
+      0 24px 32px $color-black-200,
+      0 16px 24px $color-black-200,
+      0 4px 8px $color-black-200,
+      0 0 1px $color-black-200
+   );
+   grid-gap: 10px;
+   padding: 16px 24px;
+}
+
+%flex {
+   display: flex;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+}
+
+%flexCenter {
+   @extend %flex;
+   @include flexJustifyContent(center);
+   @include flexAlignItems(center);
+}
+
+%grid {
+   display: -moz-grid;
+   display: -ms-grid;
+   display: grid;
+}
+
+%imgResponsive {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
+%inlineFlex {
+   display: -webkit-inline-flex;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
+}
+
+%truncateText {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+%page {
+   padding: 16px 24px;
+}
