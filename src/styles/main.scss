@@ -1,5 +1,4 @@
-@import './base/reset.scss', './base/fonts';
-@import './utils/mixins', './utils/variables', './utils/include-media',
-   './utils/helpers';
-@import './layout/layout';
-@import './pages/home.scss';
+@import './base/';
+@import './utils/';
+@import './layout/';
+@import './pages/';

@@ -1,0 +1,12 @@
+@import './header', './main';
+
+.layout {
+   @extend %grid;
+   @include gridTemplateRows(auto 1fr);
+   min-height: 100vh;
+
+   .main {
+      @extend %containerBreakpoint;
+      @include gridRow(2, 3);
+   }
+}
